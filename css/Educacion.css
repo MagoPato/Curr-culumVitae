@@ -117,3 +117,14 @@ footer img:hover {
   margin: auto;
   padding: auto;
 }
+
+@media screen and (max-width: 768px) {
+
+  footer {
+      padding: 5px 0;
+  }
+
+  footer a {
+      margin: 0 5px;
+  }
+}
