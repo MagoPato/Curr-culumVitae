@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el menú */
+#menu-container {
+    font-size: 20px;
+    background-color: #007BFF;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3; /* Para estar sobre los frames */
+}
+
+#menu-text {
+    font-size: 40px;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#menu-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#menu-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+#menu-links a:hover {
+    background-color: #0056b3;
+}
+
+#menu-button {
+    display: none; /* Inicialmente oculto en dispositivos móviles */
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    background: none;
+    color: white;
+    order: 0; /* Cambia el orden para que esté al principio en dispositivos móviles */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* Menú desplegable para dispositivos móviles */
+#menu-dropdown {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007BFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#menu-dropdown a {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+#menu-dropdown a:hover {
+    background-color:#0056b3;
+}
+
+/* Cambiar la dirección del menú a horizontal en dispositivos móviles */
+@media screen and (max-width: 855px) {
+    #menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu-text {
+        text-align: left;
+        margin-right: 0;
+    }
+
+    #menu-links {
+        display: none; /* Oculto inicialmente en dispositivos móviles */
+    }
+
+    #menu-button {
+        display: block; /* Mostrar el botón en dispositivos móviles */
+        left: auto;
+        right:5%;
+        font-size: 30px;
+    }
+
+    #menu-dropdown {
+        top: 60px;
+    }
+
+    #menu-dropdown a {
+        border-bottom: 1px solid #007BFF;
+    }
+}
