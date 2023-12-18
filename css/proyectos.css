@@ -31,9 +31,10 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    margin-top: 85px;
+    margin-top: 10vh; /* Usar unidades viewport height (vh) en lugar de píxeles */
     background-color: #007BFF;
     color: white;
+    margin-top:85px;
     text-align: center;
     padding: 20px 0;
     margin-left: 1%;
@@ -44,14 +45,14 @@ header {
 
 /* Estilos para el título */
 h1 {
-    font-size: 45px;
+    font-size: 3em; /* Usar unidades em para el tamaño del texto */
     text-align: center;
 }
 
 /* Estilos para las secciones de proyectos */
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 2em; /* Usar unidades em para márgenes */
+    padding: 2em;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -66,7 +67,7 @@ section {
 
 /* Estilos para los títulos de sección */
 h2 {
-    font-size: 35px;
+    font-size: 2.5em; /* Usar unidades em para el tamaño del texto */
     text-align: center;
 }
 
@@ -78,12 +79,12 @@ ul.project-list {
 
 /* Estilos para los elementos de la lista de proyectos */
 ul.project-list li {
-    margin-bottom: 10px;
+    margin-bottom: 1em; /* Usar unidades em para márgenes */
 }
 
 /* Estilos para secciones con una sola imagen */
 section.single-image img {
-    max-width: 40%;
+    max-width: 20%; /* Ajustar según tus necesidades */
     display: block;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -92,7 +93,7 @@ section.single-image img {
 
 /* Estilos para secciones con dos imágenes */
 section.two-images img {
-    max-width: 30%;
+    max-width: 30%; /* Ajustar según tus necesidades */
     display: inline-block;
     margin: 1% 1%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -106,14 +107,14 @@ section.single-image img:hover {
 
 /* Estilos para los títulos de reconocimiento */
 ul.project-list h2 {
-    font-size: 28px;
+    font-size: 2em; /* Usar unidades em para el tamaño del texto */
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1em; /* Usar unidades em para márgenes */
 }
 
 /* Estilos para los párrafos de proyectos */
 ul.project-list p {
-    font-size: 16px;
+    font-size: 1em; /* Usar unidades em para el tamaño del texto */
     line-height: 1.5;
 }
 
@@ -123,10 +124,10 @@ a.more-info-link {
     display: inline-block;
     background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 1em 2em; /* Usar unidades em para el padding */
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 1em; /* Usar unidades em para márgenes */
     font-weight: bold;
 }
 
@@ -139,7 +140,7 @@ a.more-info-link:hover {
 footer {
     background-color: #007BFF;
     color: white;
-    padding: 10px 0;
+    padding: 1em 0; /* Usar unidades em para el padding */
     text-align: center;
     margin-left: 1%;
     margin-right: 1%;
@@ -151,7 +152,7 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
-    margin: 0 10px;
+    margin: 0 1em; /* Usar unidades em para márgenes */
 }
 
 /* Cambiar el color de fondo del enlace al pasar el mouse sobre él en el pie de página */
@@ -163,4 +164,11 @@ footer img:hover {
     transform: scale(1.2);
     margin: auto;
     padding: auto;
+}
+
+/* Media query para estilos en dispositivos móviles */
+@media screen and (max-width: 600px) {
+    header {
+        margin-top: 5vh;
+    }
 }
