@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades</title>
+    <link rel="stylesheet" type="text/css" href="../css/habilidades.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="icon" href="../img/reanudar.png" type="image/png">
+</head>
+<body>
+    <div id="menu-container">
+        <div id="menu-text">Currículum Vitae</div>
+        <div id="menu-links">
+            <a href="../index.html" target="_self">Experiencia</a>
+            <a href="../Menu/educacion.html" target="_self">Educación</a>
+            <a href="../Menu/habilidades.html" target="_self">Habilidades</a>
+            <a href="../Menu/proyectos.html" target="_self">Proyectos</a>
+        </div>
+        <button id="menu-button" onclick="toggleMenu()">☰</button>
+        <div id="menu-dropdown">
+            <a href="../index.html" target="_self" onclick="toggleMenu()">Experiencia</a>
+            <a href="../Menu/educacion.html" target="_self" onclick="toggleMenu()">Educación</a>
+            <a href="../Menu/habilidades.html" target="_self" onclick="toggleMenu()">Habilidades</a>
+            <a href="../Menu/proyectos.html" target="_self" onclick="toggleMenu()">Proyectos</a>
+        </div>
+    </div>
+    <header>
+        <h1>Habilidades</h1>
+    </header>
+
+    <section>
+        <h2>Habilidades Técnicas</h2>
+        <ul class="skill-list">
+            <li>JavaScript</li>
+            <li>C/C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL Server</li>
+            <li>PHP</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Herramientas</h2>
+        <ul class="skill-list">
+            <li>Node.js</li>
+            <li>Chrome DevTools</li>
+            <li>Node Inspector</li>
+            <li>VS Code debugger</li>
+            <li>Xampp</li>
+            <!-- Agrega más herramientas si es necesario -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>Arquitectura</h2>
+        <ul class="skill-list">
+            <li>Microservices</li>
+            <li>Event-Driven</li>
+            <li>Design System Pattern</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Microcontroladores</h2>
+        <ul class="skill-list">
+            <li>Programación de microcontroladores</li>
+            <li>Desarrollo de proyectos con microcontroladores tipo Arduino</li>
+            <li>Programación de ESP32</li>
+            <li>Programación de microcontroladores de Raspberry Pi</li>
+            <li>Comunicación IoT</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Inteligencia Artificial (IA)</h2>
+        <ul class="skill-list">
+            <li>Aprendizaje automático (Machine Learning)</li>
+            <li>Redes neuronales artificiales (ANN)</li>
+            <li>Visión por computadora</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Redes</h2>
+        <ul class="skill-list">
+            <li>Configuración de redes</li>
+            <li>Protocolos de red (TCP/IP, HTTP, etc.)</li>
+            <li>Seguridad de redes</li>
+            <li>Instalación y Mantenimiento de Cables de Red (Ethernet)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Base de Datos</h2>
+        <ul class="skill-list">
+            <li>Modelado de bases de datos</li>
+            <li>SQL (Structured Query Language)</li>
+            <li>Administración de bases de datos con MySQL</li>
+            <li>Consultas y optimización de bases de datos</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sistemas Operativos</h2>
+        <ul class="skill-list">
+            <li>Windows</li>
+            <li>Linux (Ubuntu, CentOS, etc.)</li>
+            <li>Administración y configuración de sistemas operativos</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="mailto:pato172002@gmail.com"><img src="../img/email.png" alt="" srcset=""></a>
+        <a href="tel:+8123292430"><img src="../img/llamada-telefonica.png" alt="" srcset=""></a>
+        <a href="https://github.com/MagoPato" target="_blank"><img src="../img/github.png" alt="" srcset=""></a>
+        <a href="https://www.facebook.com/MagoPato/" target="_blank"><img src="../img/facebook.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCClqYPiXO5YDP_0ndXd0f5A" target="_blank"><img src="../img/youtube.png" alt="" srcset=""></a>
+        <a href="https://www.instagram.com/mago_pato/?hl=es" target="_blank"><img src="../img/instagram.png" alt="" srcset=""></a>
+        <a href="https://open.spotify.com/user/2266hwwnnjonhwg6q7vr2zooq?si=0bf7ee0400664dce" target="_blank"><img src="../img/sp.png" alt="" srcset=""></a>
+        <!-- Agrega más enlaces a tus redes sociales si es necesario -->
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menuDropdown = document.getElementById("menu-dropdown");
+            menuDropdown.style.display = (menuDropdown.style.display === "none" || menuDropdown.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
+
+
